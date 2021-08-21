@@ -10,9 +10,8 @@ const styles = StyleSheet.create({
       borderWidth: 0.4,
       marginTop: 0,
       width: "100%",
-      height: 280,
-  
-      opacity: 0.8,
+      height: 520,
+      opacity: 0.6,
       position: 'absolute',
       justifyContent: 'center',
       alignItems: 'center'
@@ -20,22 +19,24 @@ const styles = StyleSheet.create({
     menus:{
       marginTop:0,
       marginLeft:20,
+      color:"white",
     },
     rodape:{
       backgroundColor:"cyan"
     },
     botao:{
-   borderColor:"cyan",
+   borderColor:"white",
+
    borderWidth:1,
-   height:40,
-   marginTop:150,
+   height:70,
+   marginTop:230,
    padding:20,
-   width:100,
-   marginLeft:130,
+   width:130,
+   marginLeft:118,
    position: 'absolute',
    justifyContent: 'center',
    alignItems: 'center',
-   borderRadius:18
+   borderRadius:16,
     },
     texto:{
    marginTop:0,
