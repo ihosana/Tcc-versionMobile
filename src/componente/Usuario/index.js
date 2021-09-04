@@ -1,54 +1,20 @@
 
-  import React from 'react';
+  import React, { Component } from 'react';
   import { View, Text, Button, Image, TouchableOpacity,StyleSheet, TouchableHighlight } from 'react-native';
 import { ScrollView } from 'react-native-gesture-handler';
-
-  function Usuario({navigation}) {
-    let fundo = require('../Home/jpg/png-6.jpg')
+import HomeUser from './HomeUser';
+ class Usuario extends Component {
+   render(){
+    let fundo = require('../Home/jpg/coro.png')
    let logo = require('../Home/jpg/png-45.jpg')
 
       return (
-          <View >
-         
-                <View>
-                <View>
-              
-           {/* 
-              
-          <Image style={{
-                      width:400,
-                     height:520,    
-                     position: 'absolute',
-                    justifyContent: 'center',
-                    alignItems: 'center'}}
-                   source={fundo}/>
-               <View style={estilo.estilizar}>
-
-               </View>
-           <Image style={{width:120, height:120,    
-                     position: 'absolute',
-                    justifyContent: 'center',
-                    alignItems: 'center' }} source={logo}/> 
-              */}
-                  </View>
-            <View>
-                    <TouchableOpacity style={{ width:100, height:50, padding:12, borderRadius:10, borderColor:"darkcyan",borderWidth:2, marginTop:10, marginLeft:240}}>
-                        <Text style={{marginLeft:10,color:"darkcyan", fontSize:16}}>
-                            Marcar 
-                        </Text>
-                    </TouchableOpacity>
-                  </View>
-                  <ScrollView>
-                      <Image style={{width:"100%", height:100, marginTop:20
-                      }} source={fundo}/>
-                  </ScrollView>
-        
-          </View>
-            
-          </View>
+          <ScrollView>
+              <HomeUser/>
+          </ScrollView>
       );
   }
-
+ }
   export default Usuario;
   const estilo = StyleSheet.create({
       estilizar:{

@@ -6,12 +6,34 @@ const styles = StyleSheet.create({
     
     },
     paperblack: {
+      backgroundColor: "darkcyan",
+      marginTop: 240,
+      width: "100%",
+      height: 280,
+      position: 'absolute',
+      justifyContent: 'center',
+      alignItems: 'center'
+    },
+    papelblack:{
+      backgroundColor:"#1C1C1C", width:400, height:290,     position: 'absolute',
+                justifyContent: 'center'
+    },
+    papelbranco:{
+      backgroundColor: "#1C1C1C",
+     marginLeft:0,
+      marginTop:0,
+      width:400,
+            height: 600,
+      position: 'absolute',
+      justifyContent: 'center',
+      alignItems: 'center'
+    },
+    papel:{
       backgroundColor: "black",
-      borderWidth: 0.4,
       marginTop: 0,
+      opacity:0.4,
       width: "100%",
       height: 520,
-      opacity: 0.6,
       position: 'absolute',
       justifyContent: 'center',
       alignItems: 'center'

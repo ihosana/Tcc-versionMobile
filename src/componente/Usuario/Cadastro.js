@@ -1,60 +1,49 @@
+import React from 'react';
+import { View, Text, Button, Image, TouchableOpacity,StyleSheet, TouchableHighlight } from 'react-native';
+import { ScrollView } from 'react-native-gesture-handler';
 
-  import React from 'react';
-  import { View, Text, Button, Image, TouchableOpacity,StyleSheet, TouchableHighlight } from 'react-native';
-
-  function Cadastro({navigation}) {
-    let fundo = require('../Home/jpg/png-32.jpg')
-   let logo = require('../Home/jpg/png-45.jpg')
-      return (
-          <View >
-         
-                <View>
-                <View>
-              
-           {/* 
-              
-          <Image style={{
-                      width:400,
-                     height:520,    
-                     position: 'absolute',
-                    justifyContent: 'center',
-                    alignItems: 'center'}}
-                   source={fundo}/>
-               <View style={estilo.estilizar}>
-
-               </View>
-           <Image style={{width:120, height:120,    
-                     position: 'absolute',
-                    justifyContent: 'center',
-                    alignItems: 'center' }} source={logo}/> 
-              */}
-                  </View>
-            <View>
-                    <TouchableOpacity style={{ width:100, height:50, padding:12, borderRadius:10, borderColor:"darkcyan",borderWidth:2, marginTop:10, marginLeft:240}}>
-                        <Text style={{marginLeft:10,color:"darkcyan", fontSize:16}}>
-                            Marcar 
-                        </Text>
-                    </TouchableOpacity>
-                  </View>
+function Usu({navigation}) {
+  let fundo = require('../Home/jpg/png-32.jpg')
+ let logo = require('../Home/jpg/logotipo.jpg')
+    return (
+        <View >
         
-          </View>
-            
-          </View>
-      );
-  }
+        <ScrollView>
+      
+        <View>
+        <View style={estilo.estilizar}>
+             
+        </View>
+        <View style={{backgroundColor:"darkcyan",marginLeft:63, marginTop:30, width:230, height:5}}>
+             
+             </View>
+        <Text style={{marginTop:24, marginLeft:70}}>Nome:</Text>
+        <Text style={{marginTop:24, marginLeft:70}}>Tipo :</Text>
+        <Text style={{marginTop:24, marginLeft:70}}>PSF :</Text>
+        
+        <Text style={{marginTop:24, marginLeft:70}}>Data :</Text>
+        <TouchableOpacity style={{backgroundColor:"darkcyan",marginLeft:76, marginTop:20, width:200, height:50}}>
+             <Text style={{marginLeft:60, marginTop:10, color:"white", fontSize:20}}>Excluir</Text>
+             </TouchableOpacity>
+        </View>
+        </ScrollView>
+        </View>
+    );
+}
 
-  export default Cadastro;
-  const estilo = StyleSheet.create({
-      estilizar:{
-        backgroundColor: "black",
-      borderWidth: 0.4,
-      marginTop: 0,
-      width: "100%",
-      height: 520,
-      opacity: 0.2,
-      position: 'absolute',
-      justifyContent: 'center',
-      alignItems: 'center'
+export default Usu;
+const estilo = StyleSheet.create({
+    estilizar:{
+      backgroundColor: "lightgrey",
+    borderWidth: 0,
+    marginTop: 30,
+    marginLeft:29,
+    width: 300,
+    height: 250,
+    opacity: 0.7,
+    position: 'absolute',
+    justifyContent: 'center',
+    alignItems: 'center'
 
-      }
-  })
+    }
+})
